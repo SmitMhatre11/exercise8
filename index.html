@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Exercise 8: Responsive Web Design</title>
+<link href="https://fonts.googleapis.com/css?family=Pacifico|Roboto" rel="stylesheet"> 
+<style>
+body {
+    font-family: "Pacifico", cursive;
+    font-size: 30px;
+    background-color: aqua;
+}
+
+/* Default desktop styles */
+img {
+    width: 800px;
+    display: block;
+    margin-top: 20px;
+}
+
+p {
+    width: 600px;
+    padding: 1em 1em 1em 20px;
+    background-color: #eee;
+    opacity: 0.9;
+    font-weight: lighter;
+}
+
+/* Responsive Design - Mobile View */
+@media (max-width: 600px) {
+    body {
+        background-color: yellow;
+    }
+    img, p {
+        width: 100%;
+    }
+}
+</style>
+</head>
+<body>
+<div id="headline"><h1>This is a One Page Website...</h1></div>
+<p>...and we're going to design a desktop and a mobile view for it!</p>
+<h2>Table of Contents:</h2>
+<ul>
+<li><a href="#One">One</a></li>
+<li><a href="#Two">Two</a></li>
+<li><a href="#Three">Three</a></li>
+<li><a href="#Four">Four</a></li>
+</ul>
+<h2><a name="One">One</a></h2>
+<p>Lorem ipsum dolor sit amet...</p>
+<h2><a name="Two">Two</a></h2>
+<p>Integer in elit ut odio vestibulum sagittis...</p>
+<h2><a name="Three">Three</a></h2>
+<img src="https://i.imgur.com/hvm8Jc1.jpg" alt="deck cat">
+<p>Fusce leo leo, maximus vel urna ut...</p>
+<h2><a name="Four">Four</a></h2>
+<p>Morbi vestibulum massa vitae tortor vehicula rhoncus...</p>
+</body>
+</html>
